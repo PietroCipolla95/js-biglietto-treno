@@ -14,11 +14,21 @@ L'output del prezzo finale va stampato in forma umana (ovvero con massimo due de
 
 const km = Number(prompt('Quanti km dovrai percorrere?'))
 
+ if (isNaN(km)) {
+
+    alert('valore non valido')
+
+} 
 
 //prompt asking age of user
 
 const age = Number(prompt('Quanti anni hai?'))
 
+if (isNaN(age)) {
+
+    alert('valore non valido')
+
+}
 
 //calcolo del biglietto
 
@@ -37,19 +47,5 @@ if (age < 18) {
     
     price = Number(price * 0.6)
     document.getElementById('sales').innerHTML = (price.toFixed(2) + ' €')
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+}  
